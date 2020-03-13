@@ -1,0 +1,296 @@
+TEST CASES OF TEST1 ADD
+
+TEST ID- ADDCOM1
+Use Case- Add New Computer
+Test Name- test1 adds computer with all valid company field
+Purpose- Test adds new computer with all available company names values
+Prerequisite- Access add new computer page
+Steps- 
+1- Get all available options for company names drop down menu.
+2- Add new computer with each company name.
+3- Validate the new computer added successfully
+EXPECTED RESULTS- ALL VALID COMPANY NAMES SHOULD SUCCEED
+
+TEST ID- ADDCOM2
+Use Case- Add New Computer
+Test Name- test2 adds computer by name field
+Prerequisite- Access add new computer page
+Purpose- Test adds new computer with different computer name values
+Steps- 
+1- Use different valid computer name (normal, long, numeric, special chars).
+2- Add new computer with each computer name.
+3- Validate the new computer added successfully.
+EXPECTED RESULTS- ALL VALID (COMPANY NAMES) SHOULD SUCCEED
+
+TEST ID- ADDCOM3
+Use Case- Add New Computer
+Test Name- test3 adds computer by empty name field
+Purpose- Test adds new computer with empty name
+Prerequisite- Access add new computer page
+Steps-
+1- Use empty computer name.
+2- Add new computer.
+3- Validate error message "COMPUTER NAME\NREQUIRED".
+EXPECTED RESULTS- EMPTY COMPUTER NAME RAISED EXPECTED ERROR MESSAGE
+
+TEST ID- ADDCOM4
+Use Case- Add New Computer
+Test Name- test4 cancels add computer by empty fields
+Purpose- Test cancels add new computer with all fields empty
+Prerequisite- Access add new computer page
+Steps-
+1- Use empty with all fields.
+2- Cancel computer.
+3- Validate warning message.
+EXPECTED RESULTS- CANCELS ADD NEW COMPUTER WITH ALL FIELDS EMPTY WILL RAISE WARNING
+
+TEST ID- ADDCOM5
+Use Case- Add New Computer
+Test Name- test5 cancels add computer with data field
+Purpose- Test cancels add new computer with all fields populated with valid/invalid data
+Prerequisite- Access add new computer page
+Steps-
+1- Use valid/invalid data with all fields.
+2- Cancel computer.
+3- Validate warning message.
+EXPECTED RESULTS- CANCELS ADD NEW COMPUTER WITH ALL FIELDS WITH VALID/INVALID DATA WILL RAISE WARNING
+
+TEST ID- ADDCOM6
+Use Case- Add New Computer
+Test Name- test6 adds computer with valid introduced discontinued date field
+Purpose- Test adds new computer with valid introduced/discontinued dates
+Prerequisite- Access add new computer page
+Steps-
+1- Use valid introduced/discontinued dates.
+2- Add new computer.
+3- Validate the new computer added successfully.
+EXPECTED RESULTS- ALL VALID INTRODUCED/DISCONTINUED DATES SHOULD SUCCEED
+
+TEST ID- ADDCOM7
+Use Case- Add New Computer
+Test Name- test7 adds computer with invalid introduced date field
+Purpose- Test adds new computer with different invalid introduced date values
+Prerequisite- Access add new computer page
+Steps-
+1- Use invalid introduced date (non exists date, wrong format, zeros, wrong delimiter, chars, string, number, wrong date).
+2- Add new computer.
+3- Validate error message "Introduced date\nDate ('yyyy-MM-dd')".
+EXPECTED RESULTS- USE INVALID INTRODUCED DATE RAISED EXPECTED ERROR MESSAGE
+
+TEST ID- ADDCOM8
+Use Case- Add New Computer
+Test Name- test8 adds computer with invalid discontinued date field
+Purpose- Test adds new computer with different invalid discontinued date values
+Prerequisite- Access add new computer page
+Steps-
+1- Use invalid discontinued date (non exists date, wrong format, zeros, wrong delimiter, chars, string, number, wrong date).
+2- Add new computer.
+3- Validate error message "Discontinued date\nDate ('yyyy-MM-dd')".
+EXPECTED RESULTS- USE INVALID DISCONTINUED DATE RAISED EXPECTED ERROR MESSAGE
+
+_______________________________________________________________________
+                                                                      
+
+TEST CASES OF TEST2 GET
+
+TEST ID- GETCOM9
+Use Case- Get a Computer
+Test Name- test9 get existing computer
+Purpose- Test add new computer with all available company names values
+Prerequisite- Access add new computer page
+Steps- 
+1- Add new computer with vaild names (normal, long, special chars).
+2- Get the new computer by name.
+3- Validate get new computer by name successfully
+EXPECTED RESULTS- ALL VALID (COMPUTER NAMES) SHOULD SUCCEED
+
+TEST ID- GETCOM10
+Use Case- Get a Computer
+Test Name- test10 get non existing computer
+Prerequisite- Access add new computer page
+Purpose- Test get non existing computer
+Steps- 
+1- Add new computer.
+2- Get the new computer by name.
+3- Delete it.
+4- Get the new computer again.
+5- Validate text message "Nothing to display".
+EXPECTED RESULTS- GET NON EXISTING COMPUTER DISPLAY EXPECTED TEXT MESSAGE
+_______________________________________________________________________
+
+                                                                       
+TEST CASES OF TEST3 DELETE.
+
+TEST ID- DELCOM11
+Use Case- Delete a Computer
+Test Name- test11 delete existing computer
+Purpose- Test delete existing computer
+Prerequisite- Access add new computer page
+Steps- 
+1- Add new computer.
+2- Delete the new computer by name.
+3- Validate new computer deleted successfully
+EXPECTED RESULTS- DELETE A COMPUTER 
+
+TEST ID- DELCOM12
+Use Case- Delete a Computer
+Test Name- test12 access deleted computer page
+Prerequisite- Access add new computer page
+Purpose- Test access deleted computer page
+Steps- 
+1- Add new computer.
+2- Get the new computer by name.
+3- Delete it.
+4- Access the machine url.
+EXPECTED RESULTS- ACCESSING DELETED COMPUTER PAGE NOTHING TO DISPLAY.
+
+_______________________________________________________________________
+
+
+TEST CASES OF TEST4 UPDATE
+
+TEST ID- UPCOM13
+Use Case- Update a Computer
+Test Name- test13 update computer by company
+Purpose- Test update company with another value
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Change the company field value.
+2- Validate the computer updated successfully.
+EXPECTED RESULTS- UPDATE COMPANY WITH ANOTHER VALUE SHOULD SUCCEED
+
+TEST ID- UPCOM14
+Use Case- Update a Computer
+Test Name- test14 update computer name
+Purpose- Test update computer name with different vaild values
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Change the computer field value by (string, long, numeric, special chars).
+2- Validate the computer updated successfully.
+EXPECTED RESULTS- UPDATE COMPUTER NAME WITH DIFFERENT VAILD VALUES SHOULD SUCCEED
+
+TEST ID- UPCOM15
+Use Case- Update a Computer
+Test Name- test15 update computer name to empty
+Purpose- Test update after clearing computer name
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Change the computer field value by empty computer name.
+2- Validate error message "Computer name\nRequired".
+EXPECTED RESULTS- EMPTY COMPUTER NAME RAISED EXPECTED ERROR MESSAGE
+
+TEST ID- UPCOM16
+Use Case- Update a Computer
+Test Name- test16 update computer without changes
+Purpose- Test update computer without changes
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Don't change any field value.
+2- Validate the computer updated successfully.
+EXPECTED RESULTS- UPDATE COMPANY WITHOUT CHANGES SHOULD SUCCEED
+
+TEST ID- UPCOM17
+Use Case- Update a Computer
+Test Name- test17 update computer canceled
+Purpose- Test cancel update without changes
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Don't change any field value.
+2- Cancel update.
+3- Validate warning message.
+EXPECTED RESULTS- CANCEL UPDATE COMPUTER WITH NO CHANGES WILL RAISE WARNING
+
+TEST ID- UPCOM18
+Use Case- Update a Computer
+Test Name- test18 cancel update with data
+Purpose- Test cancel update after change fields with valid/invalid values
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Change fields with valid/invalid values.
+2- Cancel update.
+3- Validate warning message.
+EXPECTED RESULTS- CANCEL UPDATE COMPUTER WITH VALID/INVALID VALUES WILL RAISE WARNING
+
+TEST ID- UPCOM19
+Use Case- Update a Computer
+Test Name- test19 update computer by introduced date
+Purpose- Test update introduced date with different valid values
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Change introduced date with different valid values.
+2- Validate the computer updated successfully.
+EXPECTED RESULTS- UPDATE INTRODUCED DATE WITH DIFFERENT VALID VALUES SHOULD SUCCEED
+
+TEST ID- UPCOM20
+Use Case- Update a Computer
+Test Name- test20 update computer by discontinued date
+Purpose- Test update discontinued date with different valid values
+Prerequisite- Create new computer and access this computer page
+Steps- 
+1- Change discontinued date with different valid values.
+2- Validate the computer updated successfully.
+EXPECTED RESULTS- UPDATE DISCONTINUED DATE WITH DIFFERENT VALID VALUES SHOULD SUCCEED
+
+TEST ID- UPCOM21
+Use Case- Update a Computer
+Test Name- test21 update computer by invalid introduced date
+Purpose- Test update computer with different invalid introduced date values
+Prerequisite- Create new computer and access this computer page
+Steps-
+1- Use invalid introduced date (non exists date, wrong format, zeros, wrong delimiter, chars, string, number, wrong date).
+2- Validate error message "Introduced date\nDate ('yyyy-MM-dd')".
+EXPECTED RESULTS- USE INVALID INTRODUCED DATE RAISED EXPECTED ERROR MESSAGE
+
+TEST ID- UPCOM22
+Use Case- Update a Computer
+Test Name- test22 update computer by invalid discontinued date
+Purpose- Test update computer with different invalid discontinued date values
+Prerequisite- Create new computer and access this computer page
+Steps-
+1- Use invalid discontinued date (non exists date, wrong format, zeros, wrong delimiter, chars, string, number, wrong date).
+2- Validate error message "Discontinued date\nDate ('yyyy-MM-dd')".
+EXPECTED RESULTS- USE INVALID DISCONTINUED DATE RAISED EXPECTED ERROR MESSAGE
+
+______________________________________________________________________
+                                                                      
+
+TEST CASES OF TEST5 SEARCH
+
+TEST ID- SECOM23
+Use Case- Search a Computer
+Test Name- test23 search computer by name field
+Purpose- Test search computer by different valid names
+Prerequisite- Access computers home search page
+Steps- 
+1- Add new computer by valid name (string, long, special chars)
+2- Validate the new computer added successfully.
+3- Search for this computer using name.
+4- Validate the computer found in search successfully.
+EXPECTED RESULTS- SEARCH COMPUTER BY DIFFERENT VALID NAMES SHOULD SUCCEED
+
+TEST ID- SECOM24
+Use Case- Search a Computer
+Test Name- test24 search navigate next previous page
+Purpose- Test search navigate with next and previous pages
+Prerequisite- Access computers home search page
+Steps- 
+1- Press next link multiple time.
+2- Press previous link multiple time.
+EXPECTED RESULTS- SEARCH NAVIGATE WITH NEXT AND PREVIOUS PAGES SHOULD SUCCEED
+
+TEST ID- SECOM25
+Use Case- Search a Computer
+Test Name- test25 search non existing
+Purpose- Test search for a computer with non existing name
+Prerequisite- Access computers home search page
+Steps- 
+1- Search using non existing name.
+2- No search results should be returned.
+EXPECTED RESULTS- SEARCH FOR A COMPUTER WITH NON EXISTING NAME RETURN EXPECTED OUTPUT
+
+_______________________________________________________________________
+                                                                      
+
+
+
+
